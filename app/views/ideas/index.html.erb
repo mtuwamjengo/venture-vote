@@ -1,0 +1,15 @@
+<h1>Ideas</h1>
+
+<%= link_to 'New Idea', new_idea_path %>
+
+<ul>
+  <% @ideas.each do |idea| %>
+    <li>
+      <h3><%= idea.title %></h3>
+      <p><%= idea.description %></p>
+      <p>Votes: <%= idea.votes || 0 %></p>
+      <%= button_to 'Upvote', vote_idea_path(idea, vote: 1), method: :post %>
+      <%= button_to 'Downvote', vote_idea_path(idea, vote: -1), method: :post %>
+    </li>
+  <% end %>
+</ul>

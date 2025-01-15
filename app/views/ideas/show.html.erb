@@ -1,0 +1,6 @@
+<h1><%= @idea.title %></h1>
+
+<p><%= @idea.description %></p>
+<p>Votes: <%= @idea.votes || 0 %></p>
+
+<%= link_to 'Back', ideas_path %>
