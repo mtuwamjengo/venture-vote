@@ -1,7 +1,6 @@
 source "https://rubygems.org"
 
-
-#add styling
+# add styling
 gem 'bulma-rails', '~> 0.9.3'
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
